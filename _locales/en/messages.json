@@ -1,0 +1,47 @@
+{
+	"addonSummary": {
+		"message": "The plugin generates a QR-code from the URL for the open tab.\nCan be used to open the current URL on your smartphone."
+	},
+	"addonDescription": {
+		"message": "QR-code generator from the URL of the active tab."
+	},
+	"addonTitle": {
+		"message": "Tab to QR-code"
+	},
+	"addonOptions": {
+		"message": "Options"
+	},
+	"optionsErrorCorrectionLevel": {
+		"message": "Error Correction Level"
+	},
+	"optionsErrorCorrectionLevelTooltip": {
+		"message": "The higher the value, the bigger the picture."
+	},
+	"optionsRenderMode": {
+		"message": "Render mode"
+	},
+	"optionsFill": {
+		"message": "QR-code color"
+	},
+	"optionsBack": {
+		"message": "Background color"
+	},
+	"optionsQRSize": {
+		"message": "QR-code size"
+	},
+	"optionsMinVersion": {
+		"message": "Version"
+	},
+	"optionsQuietZone": {
+		"message": "Quiet Zone"
+	},
+	"optionsQuietZoneTitle": {
+		"message": "Indent from the edge of the pop-up window to the QR-code"
+	},
+	"optionsRoundedCorners": {
+		"message": "Rounded Corners"
+	},
+	"optionsRoundedCornersTitle": {
+		"message": "The greater the value, the \"rounder\" QR-code"
+	}
+}

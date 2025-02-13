@@ -1,0 +1,47 @@
+{
+	"addonSummary": {
+		"message": "Плагин генерирует QR-код из URL-адреса для открытой вкладки.\nМожно использовать для открытия текущего URL на смартфоне."
+	},
+	"addonDescription": {
+		"message": "Генератор QR-кода из URL активной вкладки."
+	},
+	"addonTitle": {
+		"message": "Генератор QR-кода"
+	},
+	"addonOptions": {
+		"message": "Настройки"
+	},
+	"optionsErrorCorrectionLevel": {
+		"message": "Уровень коррекции ошибок"
+	},
+	"optionsErrorCorrectionLevelTitle": {
+		"message": "Чем выше значение, тем больше картинка"
+	},
+	"optionsRenderMode": {
+		"message": "Режим рендеринга"
+	},
+	"optionsFill": {
+		"message": "Цвет QR-кода"
+	},
+	"optionsBack": {
+		"message": "Цвет фона"
+	},
+	"optionsQRSize": {
+		"message": "Размер QR-кода"
+	},
+	"optionsMinVersion": {
+		"message": "Версия"
+	},
+	"optionsQuietZone": {
+		"message": "Отступ"
+	},
+	"optionsQuietZoneTitle": {
+		"message": "Отступ от края всплывающего окна до QR-кода"
+	},
+	"optionsRoundedCorners": {
+		"message": "Скругление"
+	},
+	"optionsRoundedCornersTitle": {
+		"message": "Чем больше значение - тем \"круглее\" QR-код"
+	}
+}

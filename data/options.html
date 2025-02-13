@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	
+	<body>
+		<form>
+			<table style="width: 75%;">
+				<tr>
+					<td><label for="qreclevel" data-i18n="optionsErrorCorrectionLevel">ERROR CORRECTION LEVEL</label></td>
+					<td>
+						<select id="qreclevel" data-i18n-title="optionsErrorCorrectionLevelTitle">
+							<option value="L">L - low (7%)</option>
+							<option value="M">M - medium (15%)</option>
+							<option value="Q">Q - quartile (25%)</option>
+							<option value="H" selected="selected">H - high (30%)</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="qrrender" data-i18n="optionsRenderMode">RENDER MODE</label></td>
+					<td>
+						<select id="qrrender">
+							<option value="canvas" selected="selected">canvas</option>
+							<option value="image">image</option>
+							<option value="svg">svg</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="qrfill" data-i18n="optionsFill">FILL</label></td>
+					<td><input id="qrfill" type="color" value="#333333"></td>
+				</tr>
+				<tr>
+					<td><label for="qrback" data-i18n="optionsBack">BACK</label></td>
+					<td><input id="qrback" type="color" value="#ffffff"></td>
+				</tr>
+				<tr>
+					<td><label for="qrsize" data-i18n="optionsQRSize">QR-Size</label></td>
+					<td><input id="qrsize" name="qrsize" type="range" min="150" max="400" step="25" value="250"></td>
+				</tr>
+				<tr>
+					<td><label for="qrminver" data-i18n="optionsMinVersion">MIN VERSION</label></td>
+					<td><input id="qrminver" type="range" value="1" min="1" max="40" step="1"></td>
+				</tr>
+				
+				<tr>
+					<td><label for="qrquiet" data-i18n="optionsQuietZone">QUIET ZONE</label></td>
+					<td><input id="qrquiet" type="range" value="1" min="0" max="4" step="1" data-i18n-title="optionsQuietZoneTitle"></td>
+				</tr>
+				<tr>
+					<td><label for="qrrounded" data-i18n="optionsRoundedCorners">ROUNDED CORNERS</label></td>
+					<td><input id="qrrounded" type="range" value="20" min="0" max="100" step="10" data-i18n-title="optionsRoundedCornersTitle"></td>
+				</tr>
+			</table>
+		</form>
+		<script src="options.js"></script>
+		<script src="translation.js"></script>
+	</body>
+</html>			
