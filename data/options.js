@@ -18,7 +18,7 @@ function storeSettings() {
 	let qreclevel = qreclevelOption.value;
 	let qrquiet = qrquietOption.value;
 	let qrrounded = qrroundedOption.value;
-	browser.storage.local.set({	qrrender, qrsize, qrfill, qrback, qrminver, qreclevel, qrquiet, qrrounded });
+	browser.storage.local.set({ qrrender, qrsize, qrfill, qrback, qrminver, qreclevel, qrquiet, qrrounded });
 }
 
 // Update the options UI with the settings values retrieved from storage, or the default settings if the stored settings are empty.
