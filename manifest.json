@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Tab to QR-code",
-	"version": "3.0",
+	"version": "3.2",
 	"author": "Angel Lab",
 	"homepage_url": "https://github.com/TheShadowAngel/Firefox-Tab-to-QR-code",
 	"developer": {
@@ -16,28 +16,31 @@
 	"browser_specific_settings": {
 		"gecko": {
 			"id": "alqrt@angel.lab",
-			"strict_min_version": "109.0"
-		}
-	},
-	"options_ui": {
-		"page": "data/options.html",
-		"browser_style": false
-	},
-	"action": {
-		"browser_style": true,
-		"default_icon": "data/logo.png",
-		"default_title": "__MSG_addonTitle__",
-		"default_popup": "data/index.html"
-	},
-	"background": {
-		"scripts": [
-			"data/background.js"
+			"strict_min_version": "109.0",
+			"data_collection_permissions": {
+				"required": [
+					"none"
+				]
+			}
+		},
+		"options_ui": {
+			"page": "data/options.html",
+			"browser_style": false
+		},
+		"action": {
+			"default_icon": "data/logo.png",
+			"default_title": "__MSG_addonTitle__",
+			"default_popup": "data/index.html"
+		},
+		"background": {
+			"scripts": [
+				"data/background.js"
+			]
+		},
+		"permissions": [
+			"activeTab",
+			"storage",
+			"contextMenus",
+			"menus"
 		]
-	},
-	"permissions": [
-		"activeTab",
-		"storage",
-		"contextMenus",
-		"menus"
-	]
-}
+	}
