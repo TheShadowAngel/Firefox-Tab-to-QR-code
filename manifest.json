@@ -22,25 +22,26 @@
 					"none"
 				]
 			}
-		},
-		"options_ui": {
-			"page": "data/options.html",
-			"browser_style": false
-		},
-		"action": {
-			"default_icon": "data/logo.png",
-			"default_title": "__MSG_addonTitle__",
-			"default_popup": "data/index.html"
-		},
-		"background": {
-			"scripts": [
-				"data/background.js"
-			]
-		},
-		"permissions": [
-			"activeTab",
-			"storage",
-			"contextMenus",
-			"menus"
+		}
+	},
+	"options_ui": {
+		"page": "data/options.html",
+		"browser_style": false
+	},
+	"action": {
+		"default_icon": "data/logo.png",
+		"default_title": "__MSG_addonTitle__",
+		"default_popup": "data/index.html"
+	},
+	"background": {
+		"scripts": [
+			"data/background.js"
 		]
-	}
+	},
+	"permissions": [
+		"activeTab",
+		"storage",
+		"contextMenus",
+		"menus"
+	]
+}
