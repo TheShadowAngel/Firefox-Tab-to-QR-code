@@ -16,7 +16,7 @@ browser.contextMenus.create({
 browser.menus.onClicked.addListener((info, tab) => {
 	switch (info.menuItemId) {
 		case "tabtoqrcode-options":
-		browser.runtime.openOptionsPage();
-		break;
+			browser.runtime.openOptionsPage();
+			break;
 	}
 });

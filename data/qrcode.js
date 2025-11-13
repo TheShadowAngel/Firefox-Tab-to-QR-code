@@ -11,10 +11,9 @@ browser.storage.local.get(data => {
 		qrrounded = data.qrrounded;
 		QRCodeGen();
 	}
-	else
-	{
+	else {
 		var text = document.getElementById("options_link").textContent;
-		document.getElementById("options_link").textContent = "⚙ "+ browser.i18n.getMessage("addonOptions");
+		document.getElementById("options_link").textContent = "⚙ " + browser.i18n.getMessage("addonOptions");
 		let qrrender = 'canvas';
 		let qrsize = '250';
 		let qrfill = '#333333';
@@ -23,16 +22,16 @@ browser.storage.local.get(data => {
 		let qreclevel = 'H';
 		let qrquiet = '1';
 		let qrrounded = '20';
-		browser.storage.local.set({	qrrender, qrsize, qrfill, qrback, qrminver, qreclevel, qrquiet, qrrounded });
+		browser.storage.local.set({ qrrender, qrsize, qrfill, qrback, qrminver, qreclevel, qrquiet, qrrounded });
 		QRCodeGen();
 	}
 });
 
 // QR-Code Generator
-function QRCodeGen(){
+function QRCodeGen() {
 	if (browser.tabs && browser.tabs.query) {
 		function getActiveTab() {
-			return browser.tabs.query({currentWindow: true, active: true});
+			return browser.tabs.query({ currentWindow: true, active: true });
 		}
 		getActiveTab().then(function (data) {
 			/* Get opened tab url to generate */
